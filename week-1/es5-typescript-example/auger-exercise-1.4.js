@@ -1,7 +1,7 @@
 /*
  *  Title:  auger-exercise-1.4.js
  *  Author: April Auger
- *  Date:   9 August 2019
+ *  Date:   19 December 2019
  *  Description: A program on how to create and
  *               transpile a TypeScript file.
  */
