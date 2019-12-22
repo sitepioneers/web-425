@@ -1,5 +1,5 @@
 /*
- *  Title:  auger-exercise-1.4.js
+ *  Title:  auger-exercise-1.4.ts
  *  Author: April Auger
  *  Date:   9 August 2019
  *  Description: A program on how to create and
