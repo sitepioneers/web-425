@@ -10,27 +10,20 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-		<nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 			<div class="container">
 
-				<button class="navbar-toggler ems-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-					aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div id="main-nav" class="collapse navbar-collapse">
-					<ul class="navbar-nav ml-auto nav">
-						<li class="nav-item">
-							<a href="/" class="nav-link">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="/#" class="nav-link">About</a>
-						</li>
-						<li class="nav-item">
-							<a href="/#" class="nav-link">Contact</a>
-						</li>
-					</ul>
-				</div>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="/" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="/#" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="/#" class="nav-link">Contact</a>
+					</li>
+				</ul>
 			</div><!-- .container -->
 		</nav><!-- .navbar -->
 		<br /><br /><br />
