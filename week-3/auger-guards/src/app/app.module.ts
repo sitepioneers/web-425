@@ -1,3 +1,10 @@
+/*
+ *  Title:  app.module.ts
+ *  Author: April Auger
+ *  Date:   15 January 2020
+ *  Description: The root module for the auger-guards app.
+ */
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
