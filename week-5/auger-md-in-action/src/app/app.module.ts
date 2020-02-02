@@ -1,30 +1,32 @@
-/*
- *  Title:  app.module.ts
- *  Author: April Auger
- *  Date:   29 January 2020
- *  Description: The root module for the auger-login app.
- */
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatButtonModule, MatToolbarModule, MatFormFieldModule, MatInputModule } from '@angular/material'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule  } from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+	AppComponent,
+	HomeComponent,
+	LoginComponent
   ],
   imports: [
     BrowserModule,
 	AppRoutingModule,
 	BrowserAnimationsModule,
-	MatCardModule,
+	FlexLayoutModule,
 	MatButtonModule,
+	MatIconModule,
+	MatMenuModule,
 	MatToolbarModule,
+	MatCardModule,
 	MatFormFieldModule,
 	MatInputModule
   ],

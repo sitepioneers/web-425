@@ -1,0 +1,11 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Layout Styles */
+.parent { height: 100px }
+.left { background-color: cyan; }
+.right { background-color: yellow; }
+.column { border-right: 1px solid #eeeeee }
+
+h2 {
+	color: #212121;
+}
