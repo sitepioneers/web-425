@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutAlign="center">
+	<div fxFlex="25%" class="column">
+		<h2>Left Flex Column</h2>
+		<app-sidenav></app-sidenav>
+	</div>
+	<div fxFlex="75%">
+		<h2>Right Flex Column</h2>
+		<div class="box">AppComponent received: {{ priceQuote?.stockSymbol }} {{ priceQuote?.lastPrice | currency: 'USD' }}</div>
+		<div class="box"><app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote></div>
+	</div>
+</div>
+
+<router-outlet></router-outlet>
