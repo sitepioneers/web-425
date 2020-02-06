@@ -1,0 +1,46 @@
+/*
+ *  Title:  app.module.ts
+ *  Author: April Auger
+ *  Date:   6 Feb 2020
+ *  Description: The root module for the auger-input-properties app.
+ */
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { OrderComponent } from './components/order/order.component';
+import { NavComponent } from './components/nav/nav.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatFormField } from '@angular/material';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    OrderComponent,
+    NavComponent,
+	SidenavComponent
+  ],
+  imports: [
+    BrowserModule,
+	AppRoutingModule,
+	BrowserAnimationsModule,
+	MatButtonModule,
+	MatIconModule,
+	MatMenuModule,
+	MatToolbarModule,
+	MatSidenavModule,
+	MatFormFieldModule,
+	MatSelectModule,
+	FlexLayoutModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
