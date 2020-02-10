@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutAlign="center">
+	<div fxFlex="25%" class="column">
+		<app-sidenav></app-sidenav>
+	</div>
+	<div fxFlex="75%">
+		<div class="parent">
+			<h2>Parent</h2>
+			<div>
+				Greeting: <input type="text" [(ngModel)]="myGreeting">
+			</div>
+
+			<div>
+				User name: <input type="text" [(ngModel)]="myUser.name">
+			</div>
+
+			<app-child [greeting]="myGreeting" [user]="myUser"></app-child>
+		</div>
+	</div>
+</div>
+
+<router-outlet></router-outlet>
