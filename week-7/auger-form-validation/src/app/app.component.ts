@@ -1,3 +1,10 @@
+/*
+ *  Title:  app.comoponent.ts
+ *  Author: April Auger
+ *  Date:   14 Feb 2020
+ *  Description: The root component module for the auger-form-validation app.
+ */
+
 import { Component } from '@angular/core';
 
 @Component({

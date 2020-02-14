@@ -1,3 +1,10 @@
+/*
+ *  Title:  app.module.ts
+ *  Author: April Auger
+ *  Date:   14 Feb 2020
+ *  Description: The root module for the auger-form-validation app.
+ */
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
