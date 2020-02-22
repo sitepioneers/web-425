@@ -1,0 +1,31 @@
+<app-nav></app-nav>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutAlign="center">
+	<div fxFlex="100%">
+		<form [formGroup]="formModel" (ngSubmit)="onSubmit()">
+			<label formArrayName="services" *ngFor="let service of formModel.controls.services.controls; let i = index">
+				<mat-checkbox formControlName="services" [formControlName]="i">
+					{{checkboxOptions[i].service}}
+				</mat-checkbox>
+			</label>
+
+			<mat-divider></mat-divider>
+			<label class="label">Standard Fees</label>
+			<mat-form-field>
+				<mat-label>Parts</mat-label>
+				<input formControlName="parts" matInput type="text" name="parts">
+			</mat-form-field>
+
+
+			<div><mat-form-field>
+				<mat-label>Labor</mat-label>
+				<input formControlName="labor" matInput type="text" name="labor">
+			</mat-form-field></div>
+
+			<label class="label">Total: {{ grandTotal }}</label>
+			<div style="text-align:right"><button mat-raised-button color="primary" type="submit">Calculate</button></div>
+		</form>
+	</div>
+</div>
+
+<router-outlet></router-outlet>
