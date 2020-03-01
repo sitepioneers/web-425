@@ -1,7 +1,7 @@
 /*
  *  Title:  app.module.ts
  *  Author: April Auger
- *  Date:   22 February 2020
+ *  Date:   28 February 2020
  *  Description: The root module for Bob's Computer Repair Shop app.
  */
 
@@ -10,7 +10,20 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule, MatDividerModule, MatListModule, MatCheckboxModule, MatIconModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatFormFieldModule, MatSelectModule, MatCardModule, MatInputModule } from '@angular/material';
+import {
+	MatFormFieldModule,
+	MatInputModule,
+	MatButtonModule,
+	MatCheckboxModule,
+	MatSelectModule,
+	MatIconModule,
+	MatListModule,
+	MatDividerModule,
+	MatToolbarModule,
+	MatMenuModule,
+	MatSidenavModule,
+	MatCardModule
+} from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,27 +31,27 @@ import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent
+		AppComponent,
+		NavComponent
   ],
   imports: [
-    BrowserModule,
-	AppRoutingModule,
-	ReactiveFormsModule,
-	BrowserAnimationsModule,
-	FlexLayoutModule,
-	MatButtonModule,
-	MatListModule,
-	MatCheckboxModule,
-	MatDividerModule,
-	MatIconModule,
-	MatMenuModule,
-	MatToolbarModule,
-	MatSidenavModule,
-	MatFormFieldModule,
-	MatSelectModule,
-	MatCardModule,
-	MatInputModule
+		BrowserModule,
+		AppRoutingModule,
+		ReactiveFormsModule,
+		BrowserAnimationsModule,
+		FlexLayoutModule,
+		MatFormFieldModule,
+		MatInputModule,
+		MatButtonModule,
+		MatCheckboxModule,
+		MatSelectModule,
+		MatListModule,
+		MatIconModule,
+		MatDividerModule,
+		MatToolbarModule,
+		MatMenuModule,
+		MatSidenavModule,
+		MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

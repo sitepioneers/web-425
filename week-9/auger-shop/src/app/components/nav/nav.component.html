@@ -4,14 +4,9 @@
 			<mat-icon>build</mat-icon>
 			<span style="margin-left: 5px !important;">Bob's Computer Repair Shop</span>
 		</button>
-		<button mat-button class="mat-button">
-			About
-		</button>
-		<button mat-button class="mat-button">
-			Services
-		</button>
-		<button mat-button class="mat-button">
-			Contact
+
+		<button mat-button class="mat-button" *ngFor="let link of links; let i = index">
+			{{ links[i] }}
 		</button>
 
 		<div fxFlex></div>

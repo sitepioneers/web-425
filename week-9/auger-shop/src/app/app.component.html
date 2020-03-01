@@ -1,4 +1,5 @@
 <app-nav></app-nav>
+<h1>{{ title }}</h1>
 
 <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutAlign="center">
 	<div fxFlex="100%">
@@ -14,15 +15,16 @@
 			<mat-form-field>
 				<mat-label>Parts</mat-label>
 				<input formControlName="parts" matInput type="text" name="parts">
+				<span class="error" [hidden]="!formModel.hasError('pattern', 'parts')">Please enter a valid amount.</span>
 			</mat-form-field>
-
 
 			<div><mat-form-field>
 				<mat-label>Labor</mat-label>
 				<input formControlName="labor" matInput type="text" name="labor">
+				<span class="error" [hidden]="!formModel.hasError('pattern', 'labor')">Please enter a valid amount.</span>
 			</mat-form-field></div>
 
-			<label class="label">Total: {{ grandTotal }}</label>
+			<h3>Total: {{ grandTotal }}</h3>
 			<div style="text-align:right"><button mat-raised-button color="primary" type="submit">Calculate</button></div>
 		</form>
 	</div>

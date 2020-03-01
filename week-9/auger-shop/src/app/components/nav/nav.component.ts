@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+	links = [
+		'About',
+		'Services',
+		'Contact'
+	];
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }
