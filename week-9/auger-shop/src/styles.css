@@ -1,6 +1,9 @@
+h1 {
+    margin-left: 25px;
+}
+
 .container {
     margin: 25px;
-    margin-top: 80px;
 }
 
 .mat-divider {
@@ -9,11 +12,11 @@
 }
 
 table {
-	width: 100%;
+    width: 100%;
 }
 
 th {
-	text-align: left;
+    text-align: left;
 }
 
 label.label {
